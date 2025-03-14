@@ -292,5 +292,33 @@ const exercises = [
         "training_focus": ["lower body"],
         "injuries": ["knees", "lower back"],
         "video_url": "https://www.youtube.com/watch?v=kAgSKRnUyNU"
+    },
+    {
+        "name": "Miniband Lateral Walk",
+        "description": "Place a miniband around your legs just above your knees or at your ankles. Bend your knees slightly and walk sideways, keeping tension on the band throughout the movement. Maintain a controlled pace to focus on the glutes and hips.",
+        "equipment": ["Miniband"],
+        "duration": "3 sets of 15-20 steps per side",
+        "estimated_time": "6",
+        "intensity": ["Low", "Medium", "Hard"],
+        "intensity_variables": "Low - 15 steps per side, Medium - 18 steps per side, Hard - 20 steps per side, Can increase resistance for higher difficulty",
+        "training_type": ["circuit"],
+        "training_form": ["strength", "balance"],
+        "training_focus": ["lower body", "hips"],
+        "injuries": ["knees", "hips"],
+        "video_url": "https://www.youtube.com/watch?v=KfP0fbzIYl4"
+    },
+    {
+        "name": "Banded Dumbbell Bent Over Row",
+        "description": "Attach a resistance band to a stable surface and hold a dumbbell in each hand. Hinge at the hips, bending forward while keeping a flat back. Perform a row by pulling the dumbbells towards your torso, engaging your back muscles, and resisting the band's pull.",
+        "equipment": ["Dumbbells", "Resistance Band"],
+        "duration": "3 sets of 8-12 reps",
+        "estimated_time": "6",
+        "intensity": ["Low", "Medium", "Hard"],
+        "intensity_variables": "Low - 8 reps, Medium - 10 reps, Hard - 12 reps, Can increase band resistance or weight for higher difficulty",
+        "training_type": ["traditional"],
+        "training_form": ["strength"],
+        "training_focus": ["upper body", "back"],
+        "injuries": ["lower back", "shoulders"],
+        "video_url": "https://www.youtube.com/watch?v=2mrmN8OjGts"
     }
 ]; 

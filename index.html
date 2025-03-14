@@ -5,100 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout Generator</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Personalized Workout Generator</h1>
-            <p>Create your custom workout based on your preferences and goals</p>
-        </header>
-
-        <main>
-            <form id="workoutForm" class="workout-form">
-                <div class="form-section">
-                    <h2>Available Equipment</h2>
-                    <div class="checkbox-group" id="equipment">
-                        <label class="select-all">
-                            <input type="checkbox" id="selectAllEquipment">
-                            Select All
-                        </label>
-                        <!-- Equipment options will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h2>Workout Duration</h2>
-                    <select id="duration" required>
-                        <option value="">Select duration</option>
-                        <option value="15">15 minutes</option>
-                        <option value="30">30 minutes</option>
-                        <option value="45">45 minutes</option>
-                        <option value="60">60 minutes</option>
-                    </select>
-                </div>
-
-                <div class="form-section">
-                    <h2>Intensity Level</h2>
-                    <select id="intensity" required>
-                        <option value="">Select intensity</option>
-                        <option value="Low">Low</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Hard">Hard</option>
-                    </select>
-                </div>
-
-                <div class="form-section">
-                    <h2>Training Type</h2>
-                    <div class="checkbox-group" id="trainingType">
-                        <label class="select-all">
-                            <input type="checkbox" id="selectAllTrainingType">
-                            Select All
-                        </label>
-                        <!-- Training type options will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h2>Training Form</h2>
-                    <div class="checkbox-group" id="trainingForm">
-                        <label class="select-all">
-                            <input type="checkbox" id="selectAllTrainingForm">
-                            Select All
-                        </label>
-                        <!-- Training form options will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h2>Training Focus</h2>
-                    <div class="checkbox-group" id="trainingFocus">
-                        <label class="select-all">
-                            <input type="checkbox" id="selectAllTrainingFocus">
-                            Select All
-                        </label>
-                        <!-- Training focus options will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <div class="form-section">
-                    <h2>Injuries to Avoid</h2>
-                    <div class="checkbox-group" id="injuries">
-                        <label class="select-all">
-                            <input type="checkbox" id="selectAllInjuries">
-                            Select All
-                        </label>
-                        <!-- Injury options will be populated by JavaScript -->
-                    </div>
-                </div>
-
-                <button type="submit" class="generate-button">Generate Workout</button>
-            </form>
-
-            <div id="workoutResult" class="workout-result">
-                <!-- Generated workout will be displayed here -->
+        <h1>Workout Generator</h1>
+        
+        <form id="workoutForm">
+            <div class="form-group">
+                <h2>Equipment Available</h2>
+                <div id="equipmentCheckboxes" class="checkbox-group"></div>
             </div>
-        </main>
+
+            <div class="form-group">
+                <h2>Training Type</h2>
+                <div id="trainingTypeCheckboxes" class="checkbox-group"></div>
+            </div>
+
+            <div class="form-group">
+                <h2>Training Form</h2>
+                <div id="trainingFormCheckboxes" class="checkbox-group"></div>
+            </div>
+
+            <div class="form-group">
+                <h2>Training Focus</h2>
+                <div id="trainingFocusCheckboxes" class="checkbox-group"></div>
+            </div>
+
+            <div class="form-group">
+                <h2>Injuries to Consider</h2>
+                <div id="injuriesCheckboxes" class="checkbox-group"></div>
+            </div>
+
+            <div class="form-group">
+                <h2>Workout Duration (minutes)</h2>
+                <input type="number" id="duration" min="5" max="120" value="30">
+            </div>
+
+            <div class="form-group">
+                <h2>Intensity Level</h2>
+                <select id="intensity">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+
+            <button type="submit">Generate Workout</button>
+        </form>
+
+        <div id="workoutResult" class="workout-result"></div>
     </div>
 
     <script src="exercises.js"></script>
